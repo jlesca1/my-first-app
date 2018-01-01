@@ -6,5 +6,10 @@ import { Component } from'@angular/core';
 })
 
 export class ServerComponent {
+  serverId = 10;
+  serverStatus = 'offline';
 
+  getServerStatus() { // This is just an example of how to use string interpolation with a method
+    return this.serverStatus;
+  }
 }
